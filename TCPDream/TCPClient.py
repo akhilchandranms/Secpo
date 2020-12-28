@@ -3,7 +3,7 @@ import subprocess
 
 def client_connect():
     socketObject=socket.socket()
-    servIP=input("Enter the server IP:")
+    servIP=input("Enter the server IPaddress:")
     servPORT=input("Enter the port number:")
     socketObject.connect((servIP,servPORT))
     while True:
