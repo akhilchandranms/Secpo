@@ -9,7 +9,6 @@ def client_connect():
     while True:
         command=socketObject.recv(1024)
         if ':q' in command.decode():
-            print("exiting...")
             socketObject.close()
             break
         else:
